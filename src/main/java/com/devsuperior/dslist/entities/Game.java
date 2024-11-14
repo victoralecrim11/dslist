@@ -25,6 +25,9 @@ public class Game {
 	private Double score;
 	private String imgUrl;
 	private String shortDescription;
+	
+	//Define o campo para o tipo texto no banco de dados ultrapassando o limite de 255 caracteres
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 
 	public Game() {
